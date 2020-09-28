@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Criando o trelo</title>
+    <link rel="stylesheet" type="text/css" href="trello.css">
+    <script src="trelo_java.js"> </script>
+</head>
+<body>
+    <div class="criador_tarefa">
+        <br>
+        <h1 style="color: white; "> Salve sua próxima tarefa: </h1>
+        <input type="text" placeholder="Digite sua tarefa" id ="meta">
+        <button type="button" onclick="adicionando_meta()">
+            <strong style="color: black">Adicionar</strong>
+        </button>
+
+        <h3 style="color: white"> Estas são as suas tarefas:</h3>
+    </div>
+    <div style="margin-left: 14.5%;">
+        <div id="tarefas_andamento" class="botao">
+            <h3 style="color: white; margin: 0;"> Tarefas em andamento: </h3>
+            <br>
+
+        </div>
+        <div id="tarefas_conluidas" class="botao">
+            <h3 style="color: white; margin: 0;"> Tarefas Concluídas: </h3>
+            <br>
+        </div>
+        <div id ="tarefas_excluidas" class="botao">
+            <h3 style="color: white; margin: 0"> Tarefas Exluídas: </h3>
+            <br>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

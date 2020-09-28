@@ -1,0 +1,119 @@
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(23,23,180,1) 35%, rgba(0,212,255,1) 100%);
+}
+.criador_tarefa {
+    text-align: center;
+}
+.criador_tarefa input {
+    width: 40%;
+    height: 34px;
+    background: white;
+    border: none;
+}
+.criador_tarefa button:hover{
+    background: blue;
+    border: 1px solid black;
+
+}
+
+.criador_tarefa button:active{
+    background: green;
+}
+
+.criador_tarefa button {
+    height: 36px;
+    margin-left: -5px;
+    background: white;
+    border: none;
+    border-left: 1px solid black;
+}
+
+#tarefas_andamento {
+    padding: 25px;
+    border: white solid 2px;
+    border-radius: 30px;
+    width: 22%;
+    float: left;
+    margin-right: 20px;
+}
+
+
+
+#tarefas_andamento img {
+    width: 20px;
+    border: none;
+}
+
+
+#id_andamento {
+    position: relative;
+    top: 1px;
+}
+#id_concluido {
+    position: relative;
+    top: 1px;
+}
+
+#id_excluido {
+    position: relative;
+    top: 1px;
+}
+
+#tarefas_conluidas img {
+    width: 20px;
+    border: none;
+}
+
+#tarefas_excluidas img {
+    width: 20px;
+    border: none;
+}
+
+.botao input{
+    position: relative;
+    bottom: 4.5px;
+    height: 25px;
+    border: none;
+
+}
+.botao button{
+    height: 27px;
+    border: none;
+    border-left: 1px solid black;
+}
+
+.botao button:hover {
+    background: blue;
+}
+
+.botao button:active {
+    background: green;
+}
+
+#tarefas_conluidas {
+    padding: 25px;
+    border: white solid 2px;
+    border-radius: 30px;
+    float: left;
+    margin-right: 20px;
+    width: 22%;
+}
+
+#tarefas_conluidas input {
+    background: green;
+}
+
+
+#tarefas_excluidas {
+    border: white solid 2px;
+    border-radius: 30px;
+    float: left;
+    margin-left: 5px;
+    padding: 25px;
+    width: 22%;
+}
+
+#tarefas_excluidas input {
+    background: red;
+}
+
