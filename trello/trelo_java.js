@@ -1,13 +1,17 @@
 
 function adicionando_meta() {
     while (true) {
-        //--> Criando botões usados em Tarefas_andamento
+        //--> Criando botões TAGS usadas em todas as tarefas
 
         var meta = document.getElementById("meta").value
         var input = document.createElement("input")
         input.value = meta
         var espaco1 = document.createElement("br")
         var espaco2 = document.createElement("br")
+
+        //--> FIM
+        
+        // --> Criando TAGS usadas em Tarefas_andamento
         var remover_andamento = document.createElement("button")
         var concluido_andamento = document.createElement("button")
         concluido_andamento.id = "id_andamento"
@@ -23,7 +27,7 @@ function adicionando_meta() {
         //--> Fim
 
 
-        //-->  Criando botões usados em Tarefas concluidas
+        //-->  Criando TAGS usadas em Tarefas concluídas
 
         var remover_concluido = document.createElement("button")
         var andamento_concluido = document.createElement("button")
@@ -38,7 +42,7 @@ function adicionando_meta() {
         //-- FIM
 
 
-        //-->  Criando botões usados em Tarefas Excluídas
+        //-->  Criando TAGS usadas em Tarefas Excluídas
 
         var remover_excluido = document.createElement("button")
         var andamento_excluido = document.createElement("button")
