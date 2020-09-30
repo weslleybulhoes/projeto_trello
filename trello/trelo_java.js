@@ -1,58 +1,56 @@
 
 function adicionando_meta() {
     while (true) {
+        //--> Criando botões usados em Tarefas_andamento
+
         var meta = document.getElementById("meta").value
         var input = document.createElement("input")
+        input.value = meta
         var espaco1 = document.createElement("br")
         var espaco2 = document.createElement("br")
-        var imagem_negativo_andamento = document.createElement("img")
-        var imagem_positivo_andamento = document.createElement("img")
-        var imagem_negativo_concluido = document.createElement("img")
-        var imagem_positivo_concluido = document.createElement("img")
-        var imagem_negativo_excluido = document.createElement("img")
-        var imagem_positivo_excluido = document.createElement("img")
-        input.value = meta
-
         var remover_andamento = document.createElement("button")
         var concluido_andamento = document.createElement("button")
-
         concluido_andamento.id = "id_andamento"
-
-
+        var imagem_negativo_andamento = document.createElement("img")
+        var imagem_positivo_andamento = document.createElement("img")
         imagem_negativo_andamento.src = "imagem/positivo.jpg"
         imagem_positivo_andamento.src = "imagem/negativo.png"
-
-
         concluido_andamento.appendChild(imagem_negativo_andamento)
         remover_andamento.appendChild(imagem_positivo_andamento)
+        adicionando_bloco(espaco2, input, remover_andamento,
+                    concluido_andamento, espaco1, "tarefas_andamento")
+
+        //--> Fim
 
 
+        //-->  Criando botões usados em Tarefas concluidas
 
         var remover_concluido = document.createElement("button")
         var andamento_concluido = document.createElement("button")
-
+        var imagem_negativo_concluido = document.createElement("img")
+        var imagem_positivo_concluido = document.createElement("img")
         imagem_negativo_concluido.src = "imagem/positivo.jpg"
         imagem_positivo_concluido.src = "imagem/negativo.png"
         andamento_concluido.id = "id_concluido"
-
         andamento_concluido.appendChild(imagem_negativo_concluido)
         remover_concluido.appendChild(imagem_positivo_concluido)
 
+        //-- FIM
+
+
+        //-->  Criando botões usados em Tarefas Excluídas
 
         var remover_excluido = document.createElement("button")
         var andamento_excluido = document.createElement("button")
-
+        var imagem_negativo_excluido = document.createElement("img")
+        var imagem_positivo_excluido = document.createElement("img")
         imagem_negativo_excluido.src = "imagem/positivo.jpg"
         imagem_positivo_excluido.src = "imagem/negativo.png"
         andamento_excluido.id = "id_excluido"
-
         andamento_excluido.appendChild(imagem_negativo_excluido)
         remover_excluido .appendChild(imagem_positivo_excluido)
 
-
-
-        adicionando_bloco(espaco2, input, remover_andamento,
-                    concluido_andamento, espaco1, "tarefas_andamento")
+        //--> FIM
 
 
         //--> TAREFAS EM ANDAMENTO
@@ -90,6 +88,7 @@ function adicionando_meta() {
 
 
         //--> TAREFAS EXCLUIDAS
+
         remover_excluido.onclick = function () {
             removendo_bloco(input, remover_excluido, andamento_excluido,
                          espaco1, espaco2)
@@ -100,6 +99,7 @@ function adicionando_meta() {
                            concluido_andamento, espaco2, "tarefas_andamento")
             removendo_bloco(remover_excluido, andamento_excluido)
         }
+
         //--> FIM
 
         document.getElementById("meta").value =''
