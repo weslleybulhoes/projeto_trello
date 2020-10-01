@@ -4,13 +4,14 @@ function adicionando_meta() {
         //--> Criando botões TAGS usadas em todas as tarefas
 
         var meta = document.getElementById("meta").value
+
         var input = document.createElement("input")
         input.value = meta
         var espaco1 = document.createElement("br")
         var espaco2 = document.createElement("br")
 
         //--> FIM
-        
+
         // --> Criando TAGS usadas em Tarefas_andamento
         var remover_andamento = document.createElement("button")
         var concluido_andamento = document.createElement("button")
